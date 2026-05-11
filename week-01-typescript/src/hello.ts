@@ -47,3 +47,16 @@ function pickSymbol(): string {
 
 const item = pickSymbol();
 console.log(item);
+
+//Undefined
+
+function findUSer(id: number): string | undefined {
+  if (id === 1) return "Ritik";
+  return undefined;
+}
+
+const user = findUSer(1);
+
+console.log(user);
+
+if (user !== undefined) console.log(user.toUpperCase());
